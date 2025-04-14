@@ -1,1 +1,6 @@
-include ':app', ':andengine', ':andengine_box2d', ':andenginelivewallpaperextension'
+rootProject.name = 'LiveWallpapers'
+
+include ':app'
+include ':andengine'
+include ':andengine_box2d'
+include ':andenginelivewallpaperextension'

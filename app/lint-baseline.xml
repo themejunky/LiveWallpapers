@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.2" type="baseline" client="gradle" dependencies="false" name="AGP (8.2.2)" variant="all" version="8.2.2">
+
+    <issue
+        id="ResAuto"
+        message="In Gradle projects, always use `http://schemas.android.com/apk/res-auto` for custom attributes"
+        errorLine1="    xmlns:h3nr1ke=&quot;http://schemas.android.com/apk/res/com.lwp.falling&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/xml/wallpaper_settings.xml"
+            line="3"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="MissingConstraints"
+        message="This view is not constrained. It only has designtime positions, so it will jump to (0,0) at runtime unless you add the constraints"
+        errorLine1="    &lt;Button"
+        errorLine2="     ~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="9"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="WrongConstant"
+        message="Must be one of: Context.POWER_SERVICE, Context.WINDOW_SERVICE, Context.LAYOUT_INFLATER_SERVICE, Context.ACCOUNT_SERVICE, Context.ACTIVITY_SERVICE, Context.ALARM_SERVICE, Context.NOTIFICATION_SERVICE, Context.ACCESSIBILITY_SERVICE, Context.CAPTIONING_SERVICE, Context.KEYGUARD_SERVICE, Context.LOCATION_SERVICE, Context.HEALTHCONNECT_SERVICE, Context.SEARCH_SERVICE, Context.SENSOR_SERVICE, Context.STORAGE_SERVICE, Context.STORAGE_STATS_SERVICE, Context.WALLPAPER_SERVICE, Context.VIBRATOR_MANAGER_SERVICE, Context.VIBRATOR_SERVICE, Context.CONNECTIVITY_SERVICE, Context.IPSEC_SERVICE, Context.VPN_MANAGEMENT_SERVICE, Context.NETWORK_STATS_SERVICE, Context.WIFI_SERVICE, Context.WIFI_AWARE_SERVICE, Context.WIFI_P2P_SERVICE, Context.WIFI_RTT_RANGING_SERVICE, Context.NSD_SERVICE, Context.AUDIO_SERVICE, Context.FINGERPRINT_SERVICE, Context.BIOMETRIC_SERVICE, Context.MEDIA_ROUTER_SERVICE, Context.TELEPHONY_SERVICE, Context.TELEPHONY_SUBSCRIPTION_SERVICE, Context.CARRIER_CONFIG_SERVICE, Context.EUICC_SERVICE, Context.TELECOM_SERVICE, Context.CLIPBOARD_SERVICE, Context.INPUT_METHOD_SERVICE, Context.TEXT_SERVICES_MANAGER_SERVICE, Context.TEXT_CLASSIFICATION_SERVICE, Context.APPWIDGET_SERVICE, Context.DROPBOX_SERVICE, Context.DEVICE_POLICY_SERVICE, Context.UI_MODE_SERVICE, Context.DOWNLOAD_SERVICE, Context.NFC_SERVICE, Context.BLUETOOTH_SERVICE, Context.USB_SERVICE, Context.LAUNCHER_APPS_SERVICE, Context.INPUT_SERVICE, Context.DISPLAY_SERVICE, Context.USER_SERVICE, Context.RESTRICTIONS_SERVICE, Context.APP_OPS_SERVICE, Context.ROLE_SERVICE, Context.CAMERA_SERVICE, Context.PRINT_SERVICE, Context.CONSUMER_IR_SERVICE, Context.TV_INTERACTIVE_APP_SERVICE, Context.TV_INPUT_SERVICE, Context.USAGE_STATS_SERVICE, Context.MEDIA_SESSION_SERVICE, Context.MEDIA_COMMUNICATION_SERVICE, Context.BATTERY_SERVICE, Context.JOB_SCHEDULER_SERVICE, Context.MEDIA_PROJECTION_SERVICE, Context.MIDI_SERVICE, Context.HARDWARE_PROPERTIES_SERVICE, Context.SHORTCUT_SERVICE, Context.SYSTEM_HEALTH_SERVICE, Context.COMPANION_DEVICE_SERVICE, Context.VIRTUAL_DEVICE_SERVICE, Context.CROSS_PROFILE_APPS_SERVICE, Context.LOCALE_SERVICE, Context.MEDIA_METRICS_SERVICE, Context.DISPLAY_HASH_SERVICE, Context.CREDENTIAL_SERVICE, Context.DEVICE_LOCK_SERVICE, Context.GRAMMATICAL_INFLECTION_SERVICE"
+        errorLine1="          localDisplay = ((WindowManager) getSystemService(&quot;window&quot;)).getDefaultDisplay();"
+        errorLine2="                                                           ~~~~~~~~">
+        <location
+            file="src/main/java/com/livewallpapers/lwp/WaterDropMain.java"
+            line="127"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="LockedOrientationActivity"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices"
+        errorLine1="            android:screenOrientation=&quot;portrait&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UsingOnClickInXml"
+        message="Use databinding or explicit wiring of click listener in code"
+        errorLine1="        android:onClick=&quot;onClick&quot;/>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="12"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ExportedPreferenceActivity"
+        message="`PreferenceActivity` subclass com.livewallpapers.lwp.Settings should not be exported"
+        errorLine1="        &lt;activity"
+        errorLine2="        ^">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.white` appears to be unused"
+        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/attrs.xml"
+            line="44"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.loading_theme` appears to be unused">
+        <location
+            file="src/main/res/mipmap-xxhdpi/loading_theme.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;settings&quot;>Change Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedNamespace"
+        message="Unused namespace `h3nr1ke`"
+        errorLine1="    xmlns:h3nr1ke=&quot;http://schemas.android.com/apk/res/com.lwp.falling&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/xml/wallpaper_settings.xml"
+            line="3"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="src/main/res/mipmap-xxhdpi/loading_theme.gif"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi\ic_launcher.png: 48x48 dp (72x72 px), mipmap-mdpi\ic_launcher.png: 72x72 dp (72x72 px), mipmap-xhdpi\ic_launcher.png: 36x36 dp (72x72 px), mipmap-xxhdpi\ic_launcher.png: 24x24 dp (72x72 px), mipmap-xxxhdpi\ic_launcher.png: 18x18 dp (72x72 px)">
+        <location
+            file="src/redhearts/res/mipmap-xxxhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-xxhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-xhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-hdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-mdpi/ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicatesConfig"
+        message="The `ic_launcher.png` icon has identical contents in the following configuration folders: mipmap-hdpi, mipmap-mdpi, mipmap-xhdpi, mipmap-xxhdpi, mipmap-xxxhdpi">
+        <location
+            file="src/redhearts/res/mipmap-xxxhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-xxhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-xhdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-mdpi/ic_launcher.png"/>
+        <location
+            file="src/redhearts/res/mipmap-hdpi/ic_launcher.png"/>
+    </issue>
+
+</issues>

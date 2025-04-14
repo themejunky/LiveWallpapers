@@ -1,8 +1,9 @@
 package com.livewallpapers;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.app.Activity;
 
 import com.livewallpapers.lwp.ManagerFallingHeartsLwp;
 
@@ -15,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        new ManagerFallingHeartsLwp(this).set();
+        new ManagerFallingHeartsLwp((Activity)this).set();
     }
 }
